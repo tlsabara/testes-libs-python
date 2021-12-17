@@ -20,6 +20,7 @@ vNota3 = insertNota(3)
 vNota4 = insertNota(4)
 
 #parametros de peso das notas
+#deixei todas as notas com o mesmo peso.
 vPesoN1 = 2.5
 vPesoN2 = 2.5
 vPesoN3 = 2.5
@@ -32,15 +33,15 @@ vNota3 = vNota3 * vPesoN3
 vNota4 = vNota4 * vPesoN4
 
 #Cálculo da nota final
-vNotaFinal = (vNota1 + vNota2 + vNota3 + vNota4)/10
+vNotaFinal = (vNota1 + vNota2 + vNota3 + vNota4)/(vPesoN1 + vPesoN2 + vPesoN3 + vPesoN4)
 
 #retorno na tela para o usuário
 print('A nota final foi de: {}'.format(vNotaFinal))
 
 #apresentação se o aluno foi aprovado ou não
 if vNotaFinal < 6:
-    print('A nota é insulficiente, aluno reprovado!!!')
+    print('A nota é insuficiente, aluno reprovado!!!')
 else:
-    print('Nota de aprovação atingida, aluno aprovado!')
+    print('Nota mínima de aprovação atingida, aluno aprovado!')
 
 print('!--- FIM DO PROGRAMA ---!')
