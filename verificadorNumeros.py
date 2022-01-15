@@ -1,36 +1,33 @@
+#Código localizado em um fórum.. não lembro qual
+#modificado por Thiago Luca em 14/01/2022 - 22:12
+#alterado novamente em 15/01/2022 - 16:30
+
 from tkinter.tix import Tree
 
 
 def eNumero(num):
-    
+    #função para verificar se a input é um numero.
      try:
-         #Try to convert the input. 
+         #Tentando converter o numero imputado. 
          float(num)
          
-         #If successful, returns true.
+         #Se conseguir retorna true
          return True
          
      except:
-         #Silently ignores any exception.
+         #Ignora qqr outra coisa
          pass
      
-     #If this point was reached, the input is not a number and the function
-     #will return False.
+     #se tudo der errado ele retorna false
      return False
  
-def not_eNumero(num):
+def not_eNumero(num): 
+    #mesma coisa do codigo acima só que ao inverso.. rsrs... pra eu não usar o not
         
      try:
-         #Try to convert the input. 
          float(num)
-         
-         #If successful, returns true.
          return False
          
      except:
-         #Silently ignores any exception.
          pass
-     
-     #If this point was reached, the input is not a number and the function
-     #will return False.
      return True
