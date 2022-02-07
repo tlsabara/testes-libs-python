@@ -51,3 +51,6 @@ tela.hotkey('ctrl', 'v');
 tela.sleep(0.5);
 tela.press('enter');
 tela.typewrite('Copiado do Google');
+
+#aprendi que o pyautogui tmb localiza trechos de imagens.
+tela.locateOnScreen(img)
