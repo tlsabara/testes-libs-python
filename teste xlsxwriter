@@ -1,0 +1,15 @@
+import xlsxwriter as xw
+import os
+
+caminho = 'C:\\Users\\root_main\\Desktop\\_temp\\plan001.xlsx'
+
+pastaDeTrabalho = xw.Workbook(caminho)
+
+planilha_Dados00001 = pastaDeTrabalho.add_worksheet('Dados00001')
+
+planilha_Dados00001.write('A1', 'id chamadas', pastaDeTrabalho.add_format({fg_coloc}))
+planilha_Dados00001.write('A2', 'dados')
+planilha_Dados00001.write('A3', '0992512321')
+planilha_Dados00001.write('A4', 992512321)
+
+pastaDeTrabalho.close()
