@@ -1,0 +1,9 @@
+print(date.today())
+a = int(str(df_controle.loc[df_controle['Data'] == str(date.today())].index)[12:-17])
+print(a)
+
+if df_controle['Trabalho'][a] == 1:
+    print('dia de trabalho')
+    
+else:
+    print('dia não trabalhado')
