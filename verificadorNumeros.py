@@ -5,7 +5,7 @@
 from tkinter.tix import Tree
 
 
-def eNumero(num):
+def e_numero(num):
     #função para verificar se a input é um numero.
      try:
          #Tentando converter o numero imputado. 
@@ -21,7 +21,7 @@ def eNumero(num):
      #se tudo der errado ele retorna false
      return False
  
-def not_eNumero(num): 
+def not_e_numero(num): 
     #mesma coisa do codigo acima só que ao inverso.. rsrs... pra eu não usar o not
         
      try:
