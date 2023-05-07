@@ -3,14 +3,13 @@ from datetime import datetime
 import os
 from pathlib import Path
 
-
 ROOT_DIR = Path(os.path.abspath(os.path.curdir))
 
 
 class RA:
     def __init__(self):
         self.data_emissao = datetime.now()
-        self.__numeros_base = [randint(0,9) for i in range(11)]
+        self.__numeros_base = [randint(0, 9) for i in range(11)]
 
     @property
     def numeros(self):
@@ -71,11 +70,12 @@ class Turma:
         self.professor = professor
         self.__lista_alunos = []
 
-    def registrar_aluno(self, aluno:Aluno):
+    def registrar_aluno(self, aluno: Aluno):
         if not aluno.status_matricula_bool:
             return
         if aluno.aplicar_novo_curso(self.nome_curso):
             self.__lista_alunos.append(aluno)
+
 
 if __name__ == '__main__':
     turma_si = Turma('Sistemas de informação', 5, 't-SI-0001', 'JOSE CARLOS')
